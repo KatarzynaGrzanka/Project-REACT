@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Shadows+Into+Light');
+/*font-family: 'Shadows Into Light', cursive;*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Amatic SC', cursive;
+}
+
+header{
+    width: 100%;
+    min-height: 80vh;
+    background: url(../image/footer.png) no-repeat 100% / cover fixed;
+    position: relative;
+}
+
+ul {
+    margin: 0 0 0 33em;
+    width: 18.6em;
+    margin-left: 57em;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: .2em;
+    margin-right: .2em;
+    margin-top: .5em;
+    font-size: 1.7em;
+}
+
+article{
+    height: 25em;
+    width: 100%;
+}
+.me{
+    padding-top: .3em;
+    width: 50%;
+    height: 60%;
+    text-align: inherit;
+    font-size: 1.5em;
+}
+
+article img{
+    border-radius: 40em 30em;
+    height: 15em;
+    width: 30%;
+}
+
+.abouteMePresentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 50em;
+    margin: 0 auto;
+}
+
+section{
+    width: 100%;
+    height: 15em;
+}
+
+.first{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+}
+
+.second{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section img{
+    width: 6em;
+    height: 6em;
+}
+
+
+section .projects{
+    width: 100%;
+    height: 15em;
+}
+
+
+footer{
+    width: 100%;
+    min-height: 50vh;
+    background: url(../image/Webp.net-resizeimage.png) no-repeat 100% / cover fixed;
+    position: relative;
+    text-align: center;
+}
+
+footer h1{
+    padding-top: 1em;
+}
+
+.projects{
+    width: 100%;
+    height: 20em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects div{
+    width: 10em;
+    height: 15em;
+    background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
+    border-radius: 1em;
+    border: .2em solid gray;
+}
+
+.icons{
+    width: 100%;
+    height: 2.3em;
+    display: flex;
+}
+
+.icons ul li{
+    display: inline-block;
+}
+
+.icons ul{
+    width: 15em;
+    margin-left: 20em;
+}
+
+.icons ul li img{
+    width: 2.3em;
+    height: 2em;
+    margin: -.3em 1em 0 1em;
+}
+
+span{
+    font-size: 1.5em;
+    width: 30em;
+    margin: -.3em 0 0 1em;
+}
+
+.scroll {
+  opacity: 0.5;
+  background-color: grey;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 5em;
+  z-index: 1000;
+  border: .2em solid black;
+}
