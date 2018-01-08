@@ -6,10 +6,10 @@ class Header extends React.Component{
         return <header>
                     <nav>
                         <ul>
-                            <li>About</li>
-                            <li>Skills</li>
-                            <li>Projects</li>
-                            <li>Contact</li>
+                            <li><a href="#about">Aboute</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>    
                     </nav>
                 </header>
@@ -18,11 +18,9 @@ class Header extends React.Component{
 
 class AllAbout extends React.Component{
     render(){
-        return <article>
-                    <div className="abouteMePresentation">
-                        <img src="../image/moje.png"></img>
-                        <div className="me">My name is Kasia, I am 26 and I live in Wroclaw. I have been interested in programing since I was a tinager. About a year ago I have decided to study programing. Since then I have been learning web development by myself. On November I started cours in Coders Lab where I have lerned new programing languages and programing libraries. Now I finished the cours and I am ready to find my first job as a Front End Developer.
-                        </div>
+        return <article id="about">
+                    <div className="picture"></div>
+                    <div className="me">I am a graduate of the JavaScript developer: REACT course at Coders Lab, which prepared me for the position of Junior Frontend Developer. I became interested in programming about a year ago. By learning and creating my first projects, I decided to develop in this direction. In IT I am fascinated by the pace of development and how technology has become an inseparable element of our lives. As a programmer, I want to develop my skills and learn new technologies to be better and better.
                     </div>    
                 </article>
     }
@@ -31,7 +29,7 @@ class AllAbout extends React.Component{
 
 class Skills extends React.Component{
     render(){
-        return <section>
+        return <section id="skills">
                     <div className="first">
                         <img src="../image/csshtml.jpeg"></img>
                         <img src="../image/sass.png"></img>
@@ -51,10 +49,9 @@ class Skills extends React.Component{
 
 class Projects extends React.Component{
     render(){
-        return  <section className="projects">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+        return  <section id="projects">
+                    <div className="minotaur"></div>
+                    <div className="chair"></div>
                 </section>
     }
 }
@@ -70,12 +67,12 @@ class Footer extends React.Component{
 
 class DownLine extends React.Component{
     render(){
-        return <div className="icons">
+        return <div className="icons" id="contact">
                     <span>Copyright © 2017 Katarzyna Grzanka. All rights reserved.</span>
                     <ul>
-                        <li><img src="../image/email.png"></img></li>
-                        <li><img src="../image/github.png"></img></li>
-                        <li><img src="../image/Linkedin.png"></img></li>   
+                        <li><a href="https://www.linkedin.com/in/katarzynagrzanka/" target="_blank"><img src="../image/email.png"></img></a></li>
+                        <li><a href="https://github.com/KatarzynaGrzanka/" target="_blank"><img src="../image/github.png"></img></a></li>
+                        <li><a href="https://www.linkedin.com/in/katarzynagrzanka/" target="_blank"><img src="../image/Linkedin.png"></img></a></li>   
                     </ul>
         
                 </div>
@@ -104,10 +101,7 @@ class ScrollButton extends React.Component {
   }
   
   render () {
-      return <button title='Back to top' className='scroll' 
-               onClick={ () => { this.scrollToTop(); }}>
-                <span className='arrow-up'></span>
-              </button>;
+      return <button title='Back to top' className='scroll' onClick={ () => { this.scrollToTop(); }}>&#8679;</button>;
    }
 } 
 
@@ -118,14 +112,13 @@ class Main extends React.Component{
                     <Header/>
                     <AllAbout/>
                     <Skills/>
-                    <Projects/>
                     <ScrollButton/>
                     <Footer/>
+                    <Projects/>
                     <DownLine/>
                </div>           
     }
 }
-                    
                         
 class App extends React.Component {
   render(){

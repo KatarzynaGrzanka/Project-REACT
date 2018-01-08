@@ -10107,22 +10107,38 @@ var Header = function (_React$Component) {
                         _react2.default.createElement(
                             "li",
                             null,
-                            "About"
+                            _react2.default.createElement(
+                                "a",
+                                { href: "#about" },
+                                "Aboute"
+                            )
                         ),
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Skills"
+                            _react2.default.createElement(
+                                "a",
+                                { href: "#skills" },
+                                "Skills"
+                            )
                         ),
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Projects"
+                            _react2.default.createElement(
+                                "a",
+                                { href: "#projects" },
+                                "Projects"
+                            )
                         ),
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Contact"
+                            _react2.default.createElement(
+                                "a",
+                                { href: "#contact" },
+                                "Contact"
+                            )
                         )
                     )
                 )
@@ -10147,16 +10163,12 @@ var AllAbout = function (_React$Component2) {
         value: function render() {
             return _react2.default.createElement(
                 "article",
-                null,
+                { id: "about" },
+                _react2.default.createElement("div", { className: "picture" }),
                 _react2.default.createElement(
                     "div",
-                    { className: "abouteMePresentation" },
-                    _react2.default.createElement("img", { src: "../image/moje.png" }),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "me" },
-                        "My name is Kasia, I am 26 and I live in Wroclaw. I have been interested in programing since I was a tinager. About a year ago I have decided to study programing. Since then I have been learning web development by myself. On November I started cours in Coders Lab where I have lerned new programing languages and programing libraries. Now I finished the cours and I am ready to find my first job as a Front End Developer."
-                    )
+                    { className: "me" },
+                    "I am a graduate of the JavaScript developer: REACT course at Coders Lab, which prepared me for the position of Junior Frontend Developer. I became interested in programming about a year ago. By learning and creating my first projects, I decided to develop in this direction. In IT I am fascinated by the pace of development and how technology has become an inseparable element of our lives. As a programmer, I want to develop my skills and learn new technologies to be better and better."
                 )
             );
         }
@@ -10179,7 +10191,7 @@ var Skills = function (_React$Component3) {
         value: function render() {
             return _react2.default.createElement(
                 "section",
-                null,
+                { id: "skills" },
                 _react2.default.createElement(
                     "div",
                     { className: "first" },
@@ -10217,10 +10229,9 @@ var Projects = function (_React$Component4) {
         value: function render() {
             return _react2.default.createElement(
                 "section",
-                { className: "projects" },
-                _react2.default.createElement("div", null),
-                _react2.default.createElement("div", null),
-                _react2.default.createElement("div", null)
+                { id: "projects" },
+                _react2.default.createElement("div", { className: "minotaur" }),
+                _react2.default.createElement("div", { className: "chair" })
             );
         }
     }]);
@@ -10269,7 +10280,7 @@ var DownLine = function (_React$Component6) {
         value: function render() {
             return _react2.default.createElement(
                 "div",
-                { className: "icons" },
+                { className: "icons", id: "contact" },
                 _react2.default.createElement(
                     "span",
                     null,
@@ -10281,17 +10292,29 @@ var DownLine = function (_React$Component6) {
                     _react2.default.createElement(
                         "li",
                         null,
-                        _react2.default.createElement("img", { src: "../image/email.png" })
+                        _react2.default.createElement(
+                            "a",
+                            { href: "https://www.linkedin.com/in/katarzynagrzanka/", target: "_blank" },
+                            _react2.default.createElement("img", { src: "../image/email.png" })
+                        )
                     ),
                     _react2.default.createElement(
                         "li",
                         null,
-                        _react2.default.createElement("img", { src: "../image/github.png" })
+                        _react2.default.createElement(
+                            "a",
+                            { href: "https://github.com/KatarzynaGrzanka/", target: "_blank" },
+                            _react2.default.createElement("img", { src: "../image/github.png" })
+                        )
                     ),
                     _react2.default.createElement(
                         "li",
                         null,
-                        _react2.default.createElement("img", { src: "../image/Linkedin.png" })
+                        _react2.default.createElement(
+                            "a",
+                            { href: "https://www.linkedin.com/in/katarzynagrzanka/", target: "_blank" },
+                            _react2.default.createElement("img", { src: "../image/Linkedin.png" })
+                        )
                     )
                 )
             );
@@ -10336,11 +10359,10 @@ var ScrollButton = function (_React$Component7) {
 
             return _react2.default.createElement(
                 "button",
-                { title: "Back to top", className: "scroll",
-                    onClick: function onClick() {
+                { title: "Back to top", className: "scroll", onClick: function onClick() {
                         _this8.scrollToTop();
                     } },
-                _react2.default.createElement("span", { className: "arrow-up glyphicon glyphicon-chevron-up" })
+                "\u21E7"
             );
         }
     }]);
@@ -10366,9 +10388,9 @@ var Main = function (_React$Component8) {
                 _react2.default.createElement(Header, null),
                 _react2.default.createElement(AllAbout, null),
                 _react2.default.createElement(Skills, null),
-                _react2.default.createElement(Projects, null),
                 _react2.default.createElement(ScrollButton, null),
                 _react2.default.createElement(Footer, null),
+                _react2.default.createElement(Projects, null),
                 _react2.default.createElement(DownLine, null)
             );
         }

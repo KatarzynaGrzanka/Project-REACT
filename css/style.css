@@ -2,8 +2,10 @@
 /*font-family: 'Shadows Into Light', cursive;*/
 
 body{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    min-width: 20%;
 }
 
 *{
@@ -12,61 +14,61 @@ body{
 
 header{
     width: 100%;
-    min-height: 80vh;
+    min-height: 70vh;
     background: url(../image/footer.png) no-repeat 100% / cover fixed;
     position: relative;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 ul {
-    margin: 0 0 0 33em;
-    width: 18.6em;
-    margin-left: 57em;
-    
+    margin: 0 0 0 65%;
+    width: 30%;    
 }
 
 nav ul li{
     display: inline-block;
-    margin-left: .2em;
-    margin-right: .2em;
-    margin-top: .5em;
-    font-size: 1.7em;
+    margin: 1rem .3rem 0 .4rem;
+    font-size: 1.7rem;
 }
 
-article{
-    height: 25em;
+#about{
     width: 100%;
+    height: 25em;
 }
+
 .me{
-    padding-top: .3em;
     width: 50%;
     height: 60%;
     text-align: inherit;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    float: left;
+    margin-top: 8%;
 }
 
-article img{
-    border-radius: 40em 30em;
-    height: 15em;
-    width: 30%;
+.picture{
+    background-image: url(../image/Projekt.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 20%;
+    height: 50%;
+    float: left;
+    margin-top: 8%;
+    margin-left: 12%;
+    margin-right: 5%;
 }
 
-.abouteMePresentation{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 50em;
-    margin: 0 auto;
-}
-
-section{
+#skills{
     width: 100%;
-    height: 15em;
+    height: 50%;
 }
 
 .first{
     width: 70%;
-    height: 50%;
+    height: 60%;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -75,58 +77,66 @@ section{
 
 .second{
     width: 60%;
-    height: 50%;
+    height: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    padding-bottom: 2em;
 }
 
-section img{
-    width: 6em;
-    height: 6em;
+#skills img{
+    width: 6rem;
+    height: 6rem;
 }
-
-
-section .projects{
-    width: 100%;
-    height: 15em;
-}
-
 
 footer{
     width: 100%;
+    color: white;
+    letter-spacing: .2em;
+    word-spacing: .5em;
     min-height: 50vh;
-    background: url(../image/Webp.net-resizeimage.png) no-repeat 100% / cover fixed;
+    background: url(../image/and.jpg) no-repeat 100% / cover fixed;
     position: relative;
     text-align: center;
 }
 
 footer h1{
-    padding-top: 1em;
+    padding-top: 1rem;
+    font-size: 3.5em;
 }
 
-.projects{
+#projects{
     width: 100%;
-    height: 20em;
+    height: 27em;  
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.projects div{
-    width: 10em;
-    height: 15em;
-    background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
-    border-radius: 1em;
-    border: .2em solid gray;
+#projects div{
+    width: 40%;
+    height: 90%;
+    align-content: space-around;
+}
+
+.minotaur{
+    background-image: url(../image/minotaur.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.chair{
+    background-image: url(../image/sitonchair.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 2%;
 }
 
 .icons{
     width: 100%;
-    height: 2.3em;
     display: flex;
+    background-color: black;
 }
 
 .icons ul li{
@@ -135,32 +145,40 @@ background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /
 
 .icons ul{
     width: 15em;
-    margin-left: 20em;
+    float: right;
+    margin-left: 10%;
+    padding-top: .5%;
 }
 
 .icons ul li img{
-    width: 2.3em;
-    height: 2em;
-    margin: -.3em 1em 0 1em;
+    width: 2.3rem;
+    height: 2rem;
+    margin-right: 1em;
 }
 
 span{
-    font-size: 1.5em;
-    width: 30em;
-    margin: -.3em 0 0 1em;
+    width: 90%;
+    font-size: 1.3em;
+    margin-left: 3%;
+    padding-top: .5%;
+    float: left;
+    color: white;
 }
 
-.scroll {
+.scroll{
   opacity: 0.5;
   background-color: grey;
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 5em;
+  bottom: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1.9rem;
   z-index: 1000;
-  border: .2em solid black;
+  border: .1rem solid black;
+  left: 95%;
+  font-size: 2em;
+  color: white;
+  font-weight: 900;
 }
+
